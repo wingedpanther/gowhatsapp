@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="pragma" content="no-cache">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>WhatsApp Chat Enabler</title>
+      <link rel="stylesheet" href="mystyle.css">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans|Lato|Raleway' rel='stylesheet' type='text/css'>
+
+      <meta name="author" content="Vivek">
+      <meta name="title" content="GoWhatsApp!">
+	<meta name="description" content="Chat with yourself. Chat with a WhatsApp user without saving number on your device!">
+	<meta name="keywords" content="whatsapp chat, whatsapp, chat without saving number, whatsapp hack, whatsapp trick, whatsapp tips,">
+
+</head>
+<body>
+      <div class="card">
+            <h3 id="name">WhatsApp Chat Enabler</h3>
+            <h1 id="description">Chat with yourself or Anyone else without saving number</h2>
+                  <hr>
+                  <div class="numcontainer">
+                        <form id="myform"></form>
+                        <input type="number" required="required"  id="cnt" placeholder="ISD">
+                        <input type="number" required="required"  id="wano" placeholder="Enter whatsapp number">
+                        </form>
+                  </div>
+                  <input type="submit" name="gowa" id="btngo" onclick="getNumber()" value="Go!">
+      </div>
+      <script>
+            window.onload = function () {
+                  document.getElementById("cnt").value = "";
+                  document.getElementById("wano").value = "";
+
+            }
+            function getNumber() {
+                        var val = (id) => {
+                              return document.getElementById(id).value;
+                        }
+                        location.href = 'whatsapp://send?phone=' + val('cnt') + val('wano');
+                  }
+            
+      </script>
+</body>
+
+</html>
